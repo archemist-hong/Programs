@@ -45,7 +45,6 @@
 3. 모형 진단을 위한 평가 이미지, 6종의 평가지표 값 제공
 
 - 학습이 완료된 모델에 대하여, 학습이 잘 진행되었는지 검증할 수 있는 평가 이미지(ROC curve) 및 6종의 평가지표(F1-score, Geometric Mean, Area Under ROC Curve, Balanced Accuracy, Brier Inaccuracy, Cohen’s Kappa)가 제공되며, 최종 모델의 Test Loss와 GEV-활성함수를 사용한 경우, 3개의 모수 mu, sigma, xi의 최종 추정값이 ‘\*.csv’ 파일로 제공된다.
-- 
 
 <br>
 
@@ -111,12 +110,12 @@
 
 <br>
 
-``` shell
-python imbalance_classification.py F:/imb_class -s F:/imb_class/data # 기본적인 실행
+``` bash
+$ python imbalance_classification.py F:/imb_class -s F:/imb_class/data # 기본적인 실행
 ```
 
-```shell
-python imbalance_classification.py F:/imb_class -s F:/imb_class/data -r 1 2 -t 0.2 -v 0.2 -e 200 -p 5 -loss Focal -a Sigmoid # 옵션을 준 경우
+```bash
+$ python imbalance_classification.py F:/imb_class -s F:/imb_class/data -r 1 2 -t 0.2 -v 0.2 -e 200 -p 5 -loss Focal -a Sigmoid # 옵션을 준 경우
 ```
 
 <br>
@@ -125,8 +124,8 @@ python imbalance_classification.py F:/imb_class -s F:/imb_class/data -r 1 2 -t 0
 
 <br>
 
-```shell
-python imbalance_classification.py --help
+```bash
+$ python imbalance_classification.py --help
 ```
 
 <br>
@@ -190,3 +189,6 @@ pytorch 및 tensorflow는 cpu version을 사용합니다.
 
 <br>
 
+## License
+
+[복합 방법론을 적용한 불균형 자료의 이진 분류 프로그램](./공개자료/프로그램등록 정보.PNG)
